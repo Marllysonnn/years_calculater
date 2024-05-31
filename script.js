@@ -45,7 +45,7 @@ const anoInput = document.getElementById('ano');
   
   nummesInput.addEventListener('blur', function() {
     let nummes = parseInt(nummesInput.value);
-    if (nummes < 1 || nummes > mes || isNaN(nummes)) {
+    if (nummes < 1 || nummes > 12 || isNaN(nummes)) {
       nummesInput.value = '12';
     }
   });
